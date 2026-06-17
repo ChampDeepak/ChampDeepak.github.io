@@ -5,7 +5,7 @@ permalink: /portfolio/
 description: Selected research, AI and software engineering projects by Deepak Sharma.
 ---
 
-<p class="page-lede">Full-Stack Developer &amp; Machine Learning enthusiast. A selection of things I’ve researched, designed and shipped — from text-to-music research to event-driven data pipelines and agentic AI.</p>
+<p class="page-lede">Full-Stack Developer &amp; Machine Learning enthusiast. A selection of things I’ve researched, designed and shipped, from text-to-music research to event-driven data pipelines and agentic AI.</p>
 
 <h2 class="section-heading portfolio-group">Research &amp; AI</h2>
 
