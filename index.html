@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1 class="intro-hello">Hello, I’m Deepak.</h1>
+  <p>These days I am studying Computer Science Fundamentals and Applied AI.</p>
+  <p>Really curious about Science, Math and Money.</p>
+  <p>As a hobby, I love to practice different art forms and sports — addicted to the joy of the flow state these put me into.</p>
+  <p>You can reach me by <a href="mailto:{{ site.email }}">email</a>.</p>
+</section>
+
+<section class="recent">
+  <h2 class="section-heading">Latest writing</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+      <li>
+        <a class="post-list__link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="post-list__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/blog/' | relative_url }}">See all posts →</a></p>
+</section>

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Book Summaries
+permalink: /books/
+---
+<h1 class="page-title">Book Summaries</h1>
+<p class="page-lede">Notes and takeaways from books I’ve read.</p>
+<ul class="post-list">
+  {% assign books = site.books | sort: "title" %}
+  {% for book in books %}
+    <li>
+      <a class="post-list__link" href="{{ book.url | relative_url }}">{{ book.title }}</a>
+      <span class="post-list__date">{% if book.author %}{{ book.author }}{% endif %}{% if book.rating %} · {{ book.rating }}/5{% endif %}</span>
+    </li>
+  {% endfor %}
+</ul>

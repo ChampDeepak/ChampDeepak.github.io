@@ -1,0 +1,43 @@
+# --- Site settings ---
+title: Deepak
+tagline: Studying CS fundamentals & applied AI. Curious about science, math and money.
+description: >-
+  Personal site of Deepak — blog, book summaries, portfolio and about.
+email: deepakshrma.work@gmail.com
+author: Deepak
+
+# IMPORTANT for GitHub Pages:
+# If your repo is named  USERNAME.github.io        -> leave baseurl as ""
+# If your repo is named  something-else            -> set baseurl: "/something-else"
+url: ""
+baseurl: ""
+
+# --- Build settings ---
+markdown: kramdown
+permalink: /blog/:title/
+
+# Collection for book summaries
+collections:
+  books:
+    output: true
+    permalink: /books/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: book
+
+# Files Jekyll should ignore
+exclude:
+  - README.md
+  - README1.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
